@@ -1,6 +1,8 @@
 package com.jojoldu.book.springboot.web;
 
 
+import com.jojoldu.book.springboot.service.PostsService;
+import com.jojoldu.book.springboot.web.dto.PostsSaveRequestDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
