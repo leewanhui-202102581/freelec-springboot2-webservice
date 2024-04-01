@@ -1,5 +1,6 @@
 package com.jojoldu.book.springboot;
 
+import com.jojoldu.book.springboot.config.auth.SecurityConfig;
 import com.jojoldu.book.springboot.web.HelloController;
 import org.junit.jupiter.api.Test;//import org.junit.Test;가 나올 땐 수정해야 !!
 import org.junit.jupiter.api.extension.ExtendWith; //import org.junit.runner.RunWith;
@@ -26,7 +27,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @ExtendWith(SpringExtension.class)
 @WebMvcTest(controllers = HelloController.class,
         excludeFilters = {
-        @ComponentScan.Filter(type = FilterType.ASSIGNABLE_TYPE, classes = securityConfig.class)
+        @ComponentScan.Filter(type = FilterType.ASSIGNABLE_TYPE, classes = SecurityConfig.class)
         })
 public class HelloControllerTest {
     @Autowired
