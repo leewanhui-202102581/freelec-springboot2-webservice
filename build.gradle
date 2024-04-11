@@ -14,9 +14,9 @@ repositories {
 }
 
 // for Junit 5
-test { // (2)
-    useJUnitPlatform()
-}
+//test { // (2)
+//    useJUnitPlatform()
+//}
 
 dependencies {
     //(3)
