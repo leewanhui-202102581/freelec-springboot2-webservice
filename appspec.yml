@@ -13,6 +13,6 @@ permissions:
 
 hooks:
   ApplicationStart:
-    - location: deploy.sh
+    - location: scripts/deploy.sh #원래 deploy.sh에서 수정
       timeout: 60
       runas: ec2-user
